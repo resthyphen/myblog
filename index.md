@@ -3,7 +3,7 @@ layout: default
 title: Blogging
 ---
 
-# *WELCOME*
+# WELCOME
 
 Hello everybody, welcome to my blog.
 
