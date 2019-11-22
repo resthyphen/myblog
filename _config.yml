@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+=======
+theme: jekyll-theme-midnight
+>>>>>>> c89d1b47ee729b0e42488e7ba84be83f3a442cc3
