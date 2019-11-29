@@ -1,0 +1,30 @@
+{% assign sorted = site.data.comments | sort %}
+{% for entry in sorted %}
+
+    {%- assign cid = entry[0] -%}
+    {%- assign com = entry[1] -%}
+	 {%- assign replyto = include.reply_to -%}
+
+   
+
+    <div class="article-comment" id="c{{- cid -}}" >
+        <div class="article-comment-avatar">
+            <img src="https://www.gravatar.com/avatar/{{ include.email | downcase | md5 }}?d=mp" />
+        </div>
+        <div class="article-comment-content">
+            <div>{{ com.text | escape | newline_to_br | strip_newlines | markdownify | replace: "&amp;#39;", "'" | replace: "&amp;quot;", '"' }}</div>
+           {% if com.reply_to == "/test-page.html" %}
+		        <span class="article-comment-footer" style="color: rgb(255, 100, 0)">  {{ com.author | escape | strip_newlines }} &nbsp;<span style = "color: white">|</span>&nbsp;</span>
+
+           {% else %}
+				{% assign author = include.reply_to %}
+		       <span class="article-comment-footer" style="color: rgb(255, 100, 0)">  {{ com.author | escape | strip_newlines }} <span style = "color: white">reply to</span> {{   replyto | escape  | strip_newlines }} &nbsp;<span style = "color: white">|</span>&nbsp;</span>
+	       {%- endif -%}
+            <details>
+                <summary class="article-comment-footer">Reply</summary>
+                {%- include comment-form.html reply_to=cid -%}
+            </details>
+
+        </div>	
+    </div>
+{%- endfor -%}
