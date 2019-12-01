@@ -1,6 +1,37 @@
+# Site settings
+title: myblog
+email: davecompton7@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  Write something, Share something
+baseurl: "/" # the subpath of your site, e.g. /blog/
+url: "https://resthyphen.github.io" # the base hostname & protocol for your site
 
+twitter_username: dc1234
+github_username:  dc25
+google_analytics:  UA-62766723-1
+
+github_comments_repository: resthyphen/myblog
+
+# Set this to a github repository to be used to host comments.
+# github_comments_repository:  githubId/repositoryName
+
+# Minima date format
+# refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
+minima:
+  date_format: "%b %-d, %Y"
+
+# If you want to link only specific pages in your header, uncomment
+# this and add the path to the pages in order as they should show up
+#header_pages:
+# - about.html
+
+# Build settings
+markdown: kramdown
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
 
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
-

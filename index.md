@@ -1,9 +1,9 @@
 ---
-layout: default
-title: Blogging
+layout: home
+title: myblog
 ---
 
-# WELCOME
+# ようこそ！！！
 
-Hello everybody, welcome to my blog.
+
 
