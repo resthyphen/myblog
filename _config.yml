@@ -3,7 +3,7 @@ title: myblog
 email: davecompton7@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Write something, Share something
-baseurl: "/" # the subpath of your site, e.g. /blog/
+baseurl: "/myblog" # the subpath of your site, e.g. /blog/
 url: "https://resthyphen.github.io" # the base hostname & protocol for your site
 
 twitter_username: dc1234
