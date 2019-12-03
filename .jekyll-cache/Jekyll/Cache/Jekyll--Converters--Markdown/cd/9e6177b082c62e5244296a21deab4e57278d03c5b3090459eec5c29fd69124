@@ -1,0 +1,26 @@
+I"w
+<p>Python is easy to use and extend.There are a varities of package available for python that can be very versatile.It make python became so powerful.</p>
+
+<p>You can go to <a href="https://pypi.org">pypi(Python Package Index)</a> to Find, install and publish Python packages which you like.
+There are two ways mostly often be used to install the package for python:</p>
+
+<h2 id="1-setuppy">1. setup.py</h2>
+<p>go to the dicrectory where the package(format: .zip, .tar, …etc) in, extract it, after  you will see the file is setup.py that use it to 
+install. command as follow:</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">python</span> <span class="n">setup</span><span class="o">.</span><span class="n">py</span> <span class="n">install</span>
+</code></pre></div></div>
+
+<h2 id="2-using-the-pip">2. Using the pip</h2>
+<p>pip is already installed if you are using <span style="color:rgb(128, 128, 255)">Python 2 &gt;=2.7.9</span> or <span style="color:rgb(128, 128, 255)">Python 3 &gt;=3.4</span> downloaded from python.org. If not you need to download it: <a href="https://pypi.org/project/pip/">link</a> first you need to install the <a href="https://pip.pypa.io/en/stable/installing/">get-pip.py</a>
+after go to path: cd <span style="color: #ffcc00">./python*/scritps/</span> or you can add the path to your environment, then run as following:</p>
+<h3 id="install">install:</h3>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">pip</span> <span class="n">install</span> <span class="o">./</span><span class="n">yourpackage</span>
+<span class="p">(</span><span class="n">e</span><span class="o">.</span><span class="n">g</span><span class="o">.</span>  <span class="n">pip</span> <span class="n">install</span> <span class="o">./</span><span class="n">Hello</span><span class="o">.</span><span class="nb">zip</span><span class="p">)</span>
+</code></pre></div></div>
+<h3 id="uninstall">uninstall:</h3>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">pip</span> <span class="n">uninstall</span> <span class="o">./</span><span class="n">yourpackage</span>
+<span class="p">(</span><span class="n">e</span><span class="o">.</span><span class="n">g</span><span class="o">.</span> <span class="n">pip</span> <span class="n">uninstall</span> <span class="n">hello</span><span class="p">)</span>
+</code></pre></div></div>
+<p>Using the pip you don’t need to extract the file and install as <span style="color: #ffcc00">1</span>. Install directly that is more convenient.</p>
+
+:ET
